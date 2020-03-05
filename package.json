@@ -5,7 +5,14 @@
   "repository": "git@github.com:QingKunLi/datastructures.git",
   "author": "QingKunLi <lqk1997@mail.ustc.edu.cn>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-typescript": "^7.8.3",
+    "babel-jest": "^25.1.0",
     "jest": "^25.1.0"
   }
 }
