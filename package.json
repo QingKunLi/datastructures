@@ -1,0 +1,11 @@
+{
+  "name": "ds-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:QingKunLi/datastructures.git",
+  "author": "QingKunLi <lqk1997@mail.ustc.edu.cn>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
