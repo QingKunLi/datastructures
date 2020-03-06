@@ -173,6 +173,23 @@ class LinkedList<T> {
         }
         return this.tail.value;
     }
+
+    // 实现可迭代协议
+    // @ts-ignore
+    [Symbol.iterator]() {
+        let p = this.head;
+        return {
+            next() {
+                if (p) {
+                    const value = p.value;
+                    p = p.next;
+                    return { value: value, done: false};
+                } else {
+                    return { done: true };
+                }
+            }
+        }
+    }
 }
 
 export default LinkedList;
