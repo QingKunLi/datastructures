@@ -6,14 +6,9 @@ class Stack<T> {
         this.elements = new LinkedList<T>();
     }
 
-    // 栈长度
-    size(): number {
-        return this.elements.size();
-    }
-
     // 判断栈是否为空
     isEmpty() {
-        return this.size() === 0;
+        return this.elements.size() === 0;
     }
 
     // 入栈
@@ -35,13 +30,6 @@ class Stack<T> {
             throw new Error('Empty Stack');
         }
         return this.elements.peekLast();
-    }
-
-    // 实现可迭代协议
-    // @ts-ignore
-    [Symbol.iterator]() {
-        // @ts-ignore
-        return this.elements[Symbol.iterator]();
     }
 }
 

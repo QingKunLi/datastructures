@@ -2,3 +2,6 @@
 
 ## data-structures
 * list - 双向链表
+* stack - 堆栈
+* queue - 队列
+* bintree - 二叉搜索树
