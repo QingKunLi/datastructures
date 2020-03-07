@@ -6,3 +6,4 @@
 * queue - 队列
 * bintree - 二叉搜索树
 * avltree - 平衡二叉树
+* heap - 堆(优先队列)
