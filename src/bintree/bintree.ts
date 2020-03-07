@@ -165,7 +165,9 @@ class BinTree<T> {
     levelOrderTraversal(): string {
         const queue = new Queue<TNode<T>>();
         let result: string = '[';
-        queue.offer(this.root);
+        if (this.root) {
+            queue.offer(this.root);
+        }
         while (!queue.isEmpty()) {
             const node = queue.poll();
             result += node.value.toString() + ', ';
